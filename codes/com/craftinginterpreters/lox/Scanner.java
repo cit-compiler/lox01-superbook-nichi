@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.craftinginterpreters.lox.Lox;
+//import com.craftinginterpreters.lox.Lox;
 
 import static com.craftinginterpreters.lox.TokenType.*; 
 
@@ -68,13 +68,13 @@ class Scanner {
       case '!':
       addToken(match('=') ? BANG_EQUAL : BANG);
       break;
-    case '=':
+      case '=':
       addToken(match('=') ? EQUAL_EQUAL : EQUAL);
       break;
-    case '<':
+      case '<':
       addToken(match('=') ? LESS_EQUAL : LESS);
       break;
-    case '>':
+      case '>':
       addToken(match('=') ? GREATER_EQUAL : GREATER);
       break;
       case '/':
